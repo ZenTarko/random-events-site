@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Random Ivents — необычные мероприятия</title>
+  <meta name="description" content="Random Ivents — сайт с разными мероприятиями. Заявки обрабатывает Telegram-бот." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a href="#" class="logo"><span class="logo-mark">RI</span><span>Random Ivents</span></a>
+      <nav class="nav-links">
+        <a href="#events">Ивенты</a><a href="#how">Как работает</a><a href="#about">О проекте</a><a href="#contact">Контакты</a>
+      </nav>
+      <a href="#events" class="btn btn-small">Выбрать ивент</a>
+    </div>
+  </header>
+
+  <main>
+    <p class="container" role="note">Демонстрационный прототип: мероприятия и цены — примеры. Бот, регистрация, оплата и сохранение заявок не подключены.</p>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Antalya • events • new people</p>
+          <h1>Случайные встречи, яркие дни и необычные ивенты</h1>
+          <p class="hero-text">Random Ivents — место, где можно выбрать мероприятие по настроению: арт-вечер, пикник, рыбалку, прогулку, тематический день или камерную встречу. В будущем заявки сможет обрабатывать Telegram-бот.</p>
+          <div class="hero-actions"><a href="#events" class="btn">Смотреть ивенты</a><a href="#how" class="btn btn-secondary">Как записаться?</a></div>
+          <div class="stats"><div><strong>1</strong><span>выбираешь ивент</span></div><div><strong>2</strong><span>переходишь в бота</span></div><div><strong>3</strong><span>оставляешь заявку</span></div></div>
+        </div>
+        <div class="hero-visual">
+          <div class="poster poster-main"><span class="poster-date">FRI 19:00</span><h3>Garden Art Night</h3><p>рисование • музыка • новые люди</p></div>
+          <div class="poster poster-small one"><span>🎣</span><b>Fishing Day</b></div>
+          <div class="poster poster-small two"><span>🌸</span><b>Flower Garden</b></div>
+          <div class="poster poster-small three"><span>🎤</span><b>Open Mic</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="events" class="section">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">Актуальные мероприятия</p><h2>Выбери свой Random Ivent</h2><p>Примеры мероприятий. Выберите категорию, чтобы отфильтровать карточки.</p></div>
+        <div class="filters" id="filters"><button class="filter active" data-filter="all">Все</button><button class="filter" data-filter="art">Арт</button><button class="filter" data-filter="nature">Природа</button><button class="filter" data-filter="music">Музыка</button><button class="filter" data-filter="active">Актив</button></div>
+        <div class="events-grid" id="eventsGrid"></div>
+      </div>
+    </section>
+
+    <section id="how" class="section section-dark">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">Как это работает</p><h2>Планируемый сценарий записи</h2></div>
+        <div class="steps">
+          <div class="step"><span>01</span><h3>Выбираете ивент</h3><p>Смотрите дату, формат, цену, место и описание мероприятия.</p></div>
+          <div class="step"><span>02</span><h3>Переходите в Telegram-бота</h3><p>После подключения бота кнопка сможет передавать выбранное мероприятие.</p></div>
+          <div class="step"><span>03</span><h3>Оставляете заявку</h3><p>Планируется сбор имени, номера телефона, количества людей и пожеланий.</p></div>
+          <div class="step"><span>04</span><h3>Менеджер подтверждает</h3><p>Планируется сохранение заявки в таблицу и уведомление администратора.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container about-grid">
+        <div><p class="eyebrow">О проекте</p><h2>Random Ivents — не просто афиша</h2><p>Это проект для людей, которые хотят пробовать новое: знакомиться, проводить время красиво, выезжать на природу, участвовать в тематических днях и находить компанию для необычных мероприятий.</p><p>Дальше можно добавить админ-панель, оплату, календарь, отзывы, фотоотчёты и автоматическое добавление мероприятий.</p></div>
+        <div class="about-card"><h3>Что можно добавить дальше</h3><ul><li>Оплата билета онлайн</li><li>Календарь мероприятий</li><li>Фильтр по цене и дате</li><li>Фотоотчёты после ивентов</li><li>Админ-панель для добавления ивентов</li><li>Telegram-бот с Google Sheets</li></ul></div>
+      </div>
+    </section>
+
+    <section class="cta"><div class="container cta-card"><div><p class="eyebrow">Есть идея для ивента?</p><h2>Идеи для будущих мероприятий</h2><p>Можно предложить рыбалку, арт-день, пикник, тур, open mic или любой другой формат.</p></div><a id="suggestBtn" href="#" class="btn">Предложить ивент</a></div></section>
+
+    <section id="contact" class="section contact">
+      <div class="container contact-grid">
+        <div><p class="eyebrow">Контакты</p><h2>Связаться с Random Ivents</h2><p>Демонстрационный сайт не принимает заявки. Контактные данные не опубликованы.</p><div class="contact-list"><a id="botContact" href="#" target="_blank" rel="noopener">Telegram bot: изменить в script.js</a><a href="#contact" target="_blank" rel="noopener">Demo: личный контакт удалён</a></div></div>
+        <div class="mini-form"><h3>Что должен спрашивать бот?</h3><ul><li>Имя участника</li><li>Номер телефона</li><li>Выбранный ивент</li><li>Количество людей</li><li>Комментарий или пожелания</li></ul><p>Передача заявки администратору и запись в Google Sheets пока не реализованы.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-inner"><p>© 2026 Random Ivents</p><p>Events • Telegram Bot • Applications</p></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
